@@ -1,19 +1,52 @@
+
+@keyframes resize {
+ 0% { padding: 0; }
+ 50% { padding: 0 10px; }
+ 100% { padding: 0 30px; }
+}
+h1  {
+ font-size: 30px;
+ transition: all 1s;
+ color: orange;
+}
+h1 :hover {
+ font-size: 40px; color:red;
+}
 h1 {
-  color: blue;
+ animation: resize 1s alternate infinite ease-in-out;
+}
+
+#menu {
+ transition: all 1s; color:blue;
+}
+#menu:hover {
+ transform: rotate(360deg); color:green;
+}
+h2 {
+ font-size: 30px;
+ transition: all 1s;
+}
+h2:hover {
+ font-size: 40px; color:violet;
 }
 p {
-  color: white;
-}
-#profil {
-  color: white;
+ color: white;
 }
 #menu {
-  color:white;
+ color:white;
+}
+li {
+ transition:all 1s;
+ color:white;
+}
+li :hover {
+ transform:skew(45deg)
+
 }
 /*#menu {
-   border-radius: 60px/15px;
-   background: #FF0000;
-   padding: 20px;
-   width: 350px;
-   height: 30px;
+  border-radius: 60px/15px;
+  background: #FF0000;
+  padding: 20px;
+  width: 350px;
+  height: 30px;
 }*/
