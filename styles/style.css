@@ -47,8 +47,16 @@ li {
 }
 li :hover {
  transform:skew(45deg)
-
 }
+form {
+  color: white;
+}
+form :hover {
+  transition: 1s;
+  color: green;
+}
+
+
 /*#menu {
   border-radius: 60px/15px;
   background: #FF0000;

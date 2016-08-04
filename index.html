@@ -103,32 +103,43 @@
 @tevinstein
          @toni </p>
       </div>
-       <h2 id="les" align="center">Mengenal Staff</h2>
-         <p color="white">Riza Fahmi
+       <h2 id="les" align="center">Exercise Materi Hacktiv8</h2>
+        <h3 align="center"> Membuat Form </h3>
+ <form method ="post" action="">
+  <fieldset>
+   <legend>Biodata : </legend>
+   <label for="nama">Full Name</label>
+   <input id ="nama" name ="nama" type="text" placeholder="Your Full Name" pattern ="A-Z]{3}[0-9]{4}"/><br>
+   <br/>
+   <label for="Kota">Where Do You Live?</label>
+   <input id ="Kota" type="text" name ="Kota" size ="40" list="daftarkota" placeholder="Find City"/>
+   <datalist id="daftarkota">
+    <option value="Jakarta">
+    <option value="Bandung">
+    <option value="Semarang">
+    <option value="Medan">
+    <option value="Yogyakarta">
+   </datalist>
+   <br>
+   <br/>
+   <label for="tgllahir">Date of Birth</label>
+   <input id ="tgllahir" type="date" name ="tgllahir" size ="40" placeholder="Date of Birth"/><br>
+   <br/>
+   <label for="umur">Age</label>
+   <input id ="umur" type="number" name ="umur" min="1" max="100" step="1" value="0"
+   size ="40" placeholder="umur"/><label>years</label>
+   <br>
+   </br>
 
-CURRICULUM LEADER
-
-Dukungan dan bimbingannya dijamin menjadikan kamu developer yang kaya akan ilmu dan siap kerja. Berpengalaman lebih dari 10 tahun juga dalam industri IT dan Web. Sempat Sebelumnya menjabat sebagai CTO di CitizenLab
-
-       Haidar Hanif
-
-ENERGETIC TEACHER
-
-Dengan antusias membantu kamu untuk berkembang dan mengoptimalkan potensimu di tempat yang tepat. Sebelumnya adalah seorang technologist, developer, dan trainer.
-
-       Rubi Henjaya
-
-DISIPLINE TEACHER
-
-Siap mentransformasi kamu menjadi developer yang disiplin dan berstandar internasional. Berpengalaman lebih dari 4 tahun di perusahaan lokal dan 2 tahun di perusahaan Eropa
-
-       Ronald Ishak
-
-MANAGING LEADER
-
-Mengarahkan kamu untuk memulai semangat membuat kreasi untuk dunia sekitar. Berpengalaman lebih dari 10 tahun di industri IT. Sebelumnya menjabat sebagai CTO di Gift Card Indonesia dan membuat Domikado.
-       </p>
-
-</face>
-</body>
-</html>
+  </fieldset>
+  <fieldset>
+   <legend>Contact Person :</legend>
+   <label for="email">Email Address</label>
+   <input id ="email" name ="email" type="email" placeholder="anything@example.com"/><br>
+   </br>
+   <label for="telp">Phone Number</label>
+   <input id ="telp" name ="telp" type="tel" placeholder="+xxxxxxxxxxxx"/><br>
+   </br>
+  </fieldset>
+   </br>
+<input type ="submit" name="www" value="Submit"/>
