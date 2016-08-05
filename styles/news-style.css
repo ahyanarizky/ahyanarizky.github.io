@@ -23,6 +23,7 @@ p, ol, ul {
 }
 
 p {
+  align: center;
 	line-height: 190%;
 }
 
@@ -229,7 +230,7 @@ hr {
 	background: url(images/bg01.png) repeat;
 	background-size: 100%;
 	padding: 6em 0em 2em 0em;
-	background: #333333;
+	background: #4C5678;
 }
 
 
@@ -283,7 +284,7 @@ hr {
 	{
 		overflow: hidden;
 		height: 500px;
-		background: url(https://ahyanarizky.github.io/images/roadway.jpg) no-repeat center;
+		background: url(https://ahyanarizky.github.io/images/busbanner.jpg) no-repeat center;
 		background-size: cover;
 	}
 

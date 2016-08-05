@@ -1,0 +1,75 @@
+
+@keyframes resize {
+ 0% { padding: 0; }
+ 50% { padding: 0 10px; }
+ 100% { padding: 0 30px; }
+}
+h1  {
+ color: orange;
+ font-size: 30px;
+ transition: all 1s;
+
+}
+h1:hover {
+ font-size: 40px; color:red;
+}
+h1 {
+ animation: resize 1s alternate infinite ease-in-out;
+}
+
+#menu {
+ color:blue;
+ transition: all 1s;
+
+}
+#menu:hover {
+ transform: rotate(360deg);
+ color:green;
+}
+h2 {
+ color: purple;
+ font-size: 30px;
+ transition: all 1s;
+
+}
+h2:hover {
+ font-size: 40px; color:violet;
+}
+
+h3 {
+  color: brown;
+  font-size: 20px;
+  transition: all 1s;
+}
+h3:hover {
+  font-size: 30px; color:red;
+}
+p {
+ color: white;
+}
+#menu {
+ color:white;
+}
+li {
+ transition:all 1s;
+ color:white;
+}
+li :hover {
+ transform:skew(45deg)
+}
+form {
+  color: white;
+}
+form :hover {
+  transition: 1s;
+  color: green;
+}
+
+
+/*#menu {
+  border-radius: 60px/15px;
+  background: #FF0000;
+  padding: 20px;
+  width: 350px;
+  height: 30px;
+}*/
