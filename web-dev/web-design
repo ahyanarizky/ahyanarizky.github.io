@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="../styles/web-eval.css">
+  <title>Web Design</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="menu-wrapper">
+      <div id="menu" class="container">
+        <ul>
+          <li class="current_page_item"><a href="index.html">Homepage</a></li>
+          <li><a href="http://hacktiv8.com">About Hacktiv8</a></li>
+          <li><a href="http://ahyanarizky.github.io/blog/2016-08-04_first-story.html">Blog</a></li>
+          <li><a href="https://ahyanarizky.github.io/news/first-news.html">News</a></li>
+          <li><a href="https://ahyanarizky.github.io/oldindex/oldindex.html">Old Page</a></li>
+        </ul>
+      </div>
+      <!-- end #menu -->
+      <div id="header-wrapper">
+        <div id="header" class="container">
+          <div id="logo">
+            <h1><a href="#">Web Evaluation</a></h1>
+            <p>web exercise from <a href="http://hacktiv8.com" rel="nofollow">hacktiv8</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="banner"></div>
+    <div id="page" class="container">
+      <div id="content">
+        <div class="title">
+          <h2>Apa itu adaptive dan responsive web design? Apakah kamu setuju bahwa teknik tersebut bagus? Mengapa atau mengapa tidak?</h2>
+        </div>
+        <p>Keduanya merupakan pengembangan dari ilmu web design, dimana masing-masing memiliki kelebihan antara satu dengan yang lain. Hanya saja saat ini responsive web design memiliki keunggulan dibanding adaptive web design, yaitu daya adaptasi dengan
+          berbagai devicenya lebih besar.
+        </p>
+        <div class="title">
+          <h2>Apakah hadirnya smartphone dan tablet mengubah desain web secara signifikan? Bagaimana kira-kira teknologi baru akan mengubah desain web di masa depan?</h2></div>
+        <p>Munculnya smartphone dan tablet memacu adanya permintaan baru terhadap UI dan UX suatu web. Untuk mengakomodir hal tersebut, maka lahirlah RWB dan AWB. Jika seiring dengan perkembangan teknologi baru akan ada kembali permintaan yang sama mengenai
+          UI atau UX, maka sudah pasti para web developer akan terus menggali cara baru untuk mewujudkan hal tersebut.
+        </p>
+        <div class="title">
+          <h2>Bagaimana kira-kira orang yang memiliki kekurangan fisik menggunakan website? Apakah kita perlu menyesuaikan website untuk mereka juga? Solusi apa yang dapat mengatasi keadaan tersebut?</h2></div>
+        <p>Menurut saya, menyesuaikan 'website' untuk orang-orang yang memiliki kekurangan secara fisik hanya perlu dilakukan jika dan hanya jika sudah ada hardware untuk disabled user tersebut yang mendukung dirinya. Baru setelah ada hardware tersebut,
+          muncullah tugas seorang web developer untuk bisa mendeteksi dan memberikan UI dan UX yang 'cocok' untuk user tersebut.</p>
+        <div class="title">
+          <h2>Ide atau konsep apa yang sesuai denganmu saat mempelajari desain web?</h2></div>
+        <p> Bahwa jika kita harus mendesain suatu proyek, harus jelas goal apa yang ingin dicapai, konsep apa yang ingin digunakan, data apa yang mau dipakai dan bagaimana kita harus membuat tampilan yang mudah bagi user untuk berinteraksi dan memahami.</p>
+
+
+      </div>
+      <div id="sidebar">
+        <div class="box2">
+          <div class="title">
+            <h2>Social Media
+				</div>
+				<ul class="style2">
+          <li><img src="https://ahyanarizky.github.io/icon/fb-icon.jpg" height="20px" width="20px" alt="icon fb">
+            <a href="https://www.facebook.com/ahyana.rizky">Facebook</a></li>
+					<li><img src="https://ahyanarizky.github.io/icon/tw-icon.jpg" height="20px" width="20px" alt="icon tw">
+            <a href="https://www.twitter.com/ahyanarizky">Twitter</a></li>
+          <li><img src="https://ahyanarizky.github.io/icon/linkedin-icon.png"height="20px" width="20px" alt="icon lkd">
+            <a href="https://www.twitter.com/ahyanarizky">LinkedIn</a></li>
+          <li><img src="https://ahyanarizky.github.io/icon/gm-icon.ico"height="20px" width="20px" alt="icon gm">
+            <a href="mailto:ahyana.rizky@gmail.com" target="_blank">Gmail</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer-wrapper">
+	<div id="footer" class="container">
+		<div id="box1">
+			<div class="title">
+				<h2>tugas hacktiv8</h2>
+          </div>
+          <ul class="style1">
+            <li><a href="https://ahyanarizky.github.io/web-dev/web-dev.html">Web Dev</a></li>
+            <li><a href="https://ahyanarizky.github.io/web-dev/website-evaluation.html">Website Evaluation</a></li>
+            <li><a href="https://ahyanarizky.github.io/web-dev/wireframes.html">Wireframes</a></li>
+            <li><a href="https://ahyanarizky.github.io/web-dev/web-design.html">Web Design</a></li>
+            <li><a href="https://ahyanarizky.io/web-dev/core-values.html">Core Values</a></li>
+            <li><a href="https://ahyanarizky.github.io/web-dev/self-reflection.html">Self Reflection</a></li>
+          </ul>
+        </div>
+        <div id="box2">
+          <div class="title">
+            <h2>Popular Links</h2>
+          </div>
+          <ul class="style1">
+            <li><a href="https://ariadiprana.github.io">@ariadiprana</a></li>
+            <li><a href="https://fansyah.github.io">@fansyah</a></li>
+            <li><a href="https://imamnugraha23.github.io">@imamnugraha23</a></li>
+            <li><a href="https://ahmadahmadi14.github.io">@ahmadahmadi14</a></li>
+            <li><a href="https://atandiawan.github.io">@atandiawan</a></li>
+            <li><a href="https://ismanuri.github.io">@ismanuri</a></li>
+            <li><a href="https://fadhlirams.github.io">@fadhlirams</a></li>
+            <li><a href="https://sahbanagold.github.io">@sahbanagold</a></li>
+            <li><a href="https://elkana-ltobing.github.io">@elkana</a></li>
+            <li><a href="https://ivangerard.github.io">@ivangerard</a></li>
+          </ul>
+        </div>
+        <div id="box3">
+          <div class="title">
+            <h2>Comment</h2>
+          </div>
+          <p>Silahkan tinggalkan saran atau kritik yang membangun untuk pengembangan web ini
+            <div id="form-main">
+              <div id="form-div">
+                <form class="form" id="form1">
+
+                  <p class="name">
+                    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                  </p>
+
+                  <p class="email">
+                    <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                  </p>
+
+                  <p class="text">
+                    <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                  </p>
+
+                  <div class="submit">
+                    <input type="submit" value="SEND" id="button-blue" />
+                    <div class="ease"></div>
+                  </div>
+                </form>
+              </div>
+
+
+            </div>
+        </div>
+      </div>
+      <div id="copyright" class="container">
+        <p>&copy; copyright 2016 | Powered by <a href="http://hacktiv8.com">Hacktiv8</a>
+      </div>
+</body>
+
+</html>
