@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="../styles/web-eval.css">
-  <title>Ariz Web Design</title>
+  <title>Number Guess Ariz</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <div id="menu-wrapper">
       <div id="menu" class="container">
         <ul>
-          <li class="current_page_item"><a href="index.html">Homepage</a></li>
+          <li class="current_page_item"><a href="https://ahyanarizky.github.io">Homepage</a></li>
           <li><a href="http://hacktiv8.com">About Hacktiv8</a></li>
           <li><a href="http://ahyanarizky.github.io/blog/2016-08-04_first-story.html">Blog</a></li>
           <li><a href="https://ahyanarizky.github.io/news/first-news.html">News</a></li>
@@ -24,7 +24,7 @@
       <div id="header-wrapper">
         <div id="header" class="container">
           <div id="logo">
-            <h1><a href="#">Web Design</a></h1>
+            <h1><a href="#">Number Guess Quiz</a></h1>
             <p>web exercise from <a href="http://hacktiv8.com" rel="nofollow">hacktiv8</a></p>
           </div>
         </div>
@@ -33,45 +33,66 @@
     <div id="banner"></div>
     <div id="page" class="container">
       <div id="content">
-        <div class="title">
-          <h2>Apa itu adaptive dan responsive web design? Apakah kamu setuju bahwa teknik tersebut bagus? Mengapa atau mengapa tidak?</h2>
-        </div>
-        <p>Keduanya merupakan pengembangan dari ilmu web design, dimana masing-masing memiliki kelebihan antara satu dengan yang lain. Hanya saja saat ini responsive web design memiliki keunggulan dibanding adaptive web design, yaitu daya adaptasi dengan
-          berbagai devicenya lebih besar.
-        </p>
-        <div class="title">
-          <h2>Apakah hadirnya smartphone dan tablet mengubah desain web secara signifikan? Bagaimana kira-kira teknologi baru akan mengubah desain web di masa depan?</h2></div>
-        <p>Munculnya smartphone dan tablet memacu adanya permintaan baru terhadap UI dan UX suatu web. Untuk mengakomodir hal tersebut, maka lahirlah RWB dan AWB. Jika seiring dengan perkembangan teknologi baru akan ada kembali permintaan yang sama mengenai
-          UI atau UX, maka sudah pasti para web developer akan terus menggali cara baru untuk mewujudkan hal tersebut.
-        </p>
-        <div class="title">
-          <h2>Bagaimana kira-kira orang yang memiliki kekurangan fisik menggunakan website? Apakah kita perlu menyesuaikan website untuk mereka juga? Solusi apa yang dapat mengatasi keadaan tersebut?</h2></div>
-        <p>Menurut saya, menyesuaikan 'website' untuk orang-orang yang memiliki kekurangan secara fisik hanya perlu dilakukan jika dan hanya jika sudah ada hardware untuk disabled user tersebut yang mendukung dirinya. Baru setelah ada hardware tersebut,
-          muncullah tugas seorang web developer untuk bisa mendeteksi dan memberikan UI dan UX yang 'cocok' untuk user tersebut.</p>
-        <div class="title">
-          <h2>Ide atau konsep apa yang sesuai denganmu saat mempelajari desain web?</h2></div>
-        <p> Bahwa jika kita harus mendesain suatu proyek, harus jelas goal apa yang ingin dicapai, konsep apa yang ingin digunakan, data apa yang mau dipakai dan bagaimana kita harus membuat tampilan yang mudah bagi user untuk berinteraksi dan memahami.</p>
+<h1>Number Guess Game</h1>
 
+<div id="intro">
+<p>Input number between 1-9, and click submit to see your luck</p>
+</div>
+<div class="form">
+  <label for="inputGuess">Input Number: </label><input type="text" id="inputGuess">
+  <button id="buttonSubmit">Submit</button>
+</div>
 
-      </div>
-      <div id="sidebar">
-        <div class="box2">
-          <div class="title">
-            <h2>Social Media
-				</div>
-				<ul class="style2">
-          <li><img src="https://ahyanarizky.github.io/icon/fb-icon.jpg" height="20px" width="20px" alt="icon fb">
-            <a href="https://www.facebook.com/ahyana.rizky">Facebook</a></li>
-					<li><img src="https://ahyanarizky.github.io/icon/tw-icon.jpg" height="20px" width="20px" alt="icon tw">
-            <a href="https://www.twitter.com/ahyanarizky">Twitter</a></li>
-          <li><img src="https://ahyanarizky.github.io/icon/linkedin-icon.png"height="20px" width="20px" alt="icon lkd">
-            <a href="https://www.twitter.com/ahyanarizky">LinkedIn</a></li>
-          <li><img src="https://ahyanarizky.github.io/icon/gm-icon.ico"height="20px" width="20px" alt="icon gm">
-            <a href="mailto:ahyana.rizky@gmail.com" target="_blank">Gmail</a>
-				</ul>
-			</div>
-		</div>
-	</div>
+<p id="trialCount"></p>
+<p id="lastResult"></p>
+<p id="commentSection"></p>
+
+<p></p>
+
+<script>
+var randomNumber = Math.floor(Math.random() * 10) + 1;
+var trialCount = document.getElementById("trialCount");
+var lastResult = document.getElementById("lastResult");
+var commentSection = document.getElementById("commentSection");
+var buttonSubmit = document.getElementById("buttonSubmit");
+var inputGuess = document.getElementById("inputGuess");
+var guessCount = 1;
+function checkGuess() {
+  var userGuess = Number(inputGuess.value);
+  trialCount.innerHTML += userGuess + " ";
+  if(guessCount == 5) {
+    lastResult.innerHTML = "You Lose ! Refresh page to try again !";
+    disableForm();
+  } else {
+
+    if(userGuess == randomNumber) {
+      lastResult.innerHTML = "Victory !";
+      commentSection.innerHTML = "";
+      disableForm();
+    } else {
+      lastResult.innerHTML = "Oops.. wrong guess, input another number";
+      if(userGuess < randomNumber) {
+        commentSection.innerHTML = "Too small !";
+      } else if(userGuess > randomNumber) {
+        commentSection.innerHTML = "Too big !";
+      }
+    }
+    guessCount++;
+    inputGuess.value = "";
+  }
+}
+function disableForm() {
+  var wholeForm = document.querySelector(".form");
+  wholeForm.style.opacity = 0.5;
+  inputGuess.setAttribute("disabled", "disabled");
+  buttonSubmit.setAttribute("disabled", "disabled");
+}
+buttonSubmit.onclick = checkGuess;
+</script>
+
+		</div><!--jangan lewatin ini-->
+
+	</div> <!--jangan lewatin ini-->
 </div>
 <div id="footer-wrapper">
 	<div id="footer" class="container">
